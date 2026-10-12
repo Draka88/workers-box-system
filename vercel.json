@@ -1,5 +1,8 @@
 {
-  "buildCommand": "yarn build",
-  "installCommand": "yarn install --frozen-lockfile=false",
-  "framework": "create-react-app"
+  "rewrites": [
+    {
+      "source": "/api/:path*",
+      "destination": "https://worker-box-system.preview.emergentagent.com/api/:path*"
+    }
+  ]
 }
